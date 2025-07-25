@@ -19,12 +19,121 @@
   --text-primary: #e95a08;
   --text-secondary: rgba(0, 0, 0, 0.5);
   --text-dark: #111111;
+  --text-nav-dark: #252432;
+  --text-nav-gray: #8987a1;
   --text-white: #ffffff;
+  --text-black: #000000;
   --bg-primary: #f5f8ff;
   --bg-gray: rgba(0, 0, 0, 0.1);
   --bg-dark: rgba(0, 0, 0, 0.4);
 }
 
 /* Shared Styles */
+body {
+  background-color: var(--bg-primary);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-hidden {
+  display: none;
+}
+
+.hide-in-mobile {
+  display: block;
+}
+
+.text-black {
+  color: var(--text-black);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
 
 /* Navbar Styles */
+
+.navbar {
+  justify-content: space-between;
+  margin-top: 1.87rem;
+  border: 1px solid black;
+  align-items: center;
+}
+
+.brand {
+}
+
+.nav-links {
+  list-style: none;
+  gap: 48px;
+}
+
+.nav-item {
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.text-nav-dark {
+  font-weight: 700;
+  color: var(--text-nav-dark);
+}
+
+.text-nav-gray {
+  color: var(--text-nav-gray);
+}
+
+/* Banner Hero Section Style */
+.banner {
+  margin: 120px 0 0;
+  border: 1px solid black;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 461px;
+}
+
+.banner-text {
+  border: 1px solid blue;
+}
+.banner-img-container {
+  border: 1px solid green;
+}
+
+.banner-heading {
+  font-family: "Noto Serif", serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 13px 0;
+}
+.banner-description {
+  font-family: "Inter", sans-serif;
+  color: var(--text-secondary);
+  font-size: 1.375rem;
+  margin: 0;
+}
+
+.banner-img {
+}
+
+/* Responsive for mobile devices */
+@media screen and (width < 576px) {
+  .hide-in-mobile {
+    display: none;
+  }
+  .navbar {
+    margin: 13px 16px 0;
+  }
+}
