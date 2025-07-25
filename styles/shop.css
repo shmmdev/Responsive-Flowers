@@ -14,3 +14,17 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+
+:root {
+  --text-primary: #e95a08;
+  --text-secondary: rgba(0, 0, 0, 0.5);
+  --text-dark: #111111;
+  --text-white: #ffffff;
+  --bg-primary: #f5f8ff;
+  --bg-gray: rgba(0, 0, 0, 0.1);
+  --bg-dark: rgba(0, 0, 0, 0.4);
+}
+
+/* Shared Styles */
+
+/* Navbar Styles */
