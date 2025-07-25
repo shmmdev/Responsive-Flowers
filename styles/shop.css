@@ -32,6 +32,8 @@ body {
   background-color: var(--bg-primary);
   max-width: 1440px;
   margin: 0 auto;
+
+  border: 1px solid black;
 }
 
 header {
@@ -244,6 +246,118 @@ main {
   width: 286px;
   margin: -127px -193px;
   filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Latest Deals Section Style */
+.latest-deals {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.latest-deals-text {
+  max-width: 888px;
+  margin: 133px auto 0;
+}
+
+.latest-deals-heading {
+  font-family: "Noto Serif", serif;
+  font-size: 3.125rem;
+  font-weight: 700;
+  color: black;
+  margin: 0 0;
+  border: 1px solid yellow;
+}
+
+.latest-deals-description {
+  font-family: "Inter", sans-serif;
+  font-size: 1.375rem;
+  margin: 0 0 120px;
+  color: var(--text-secondary);
+  border: 1px solid tomato;
+}
+
+/* Deals section image grid styles */
+.deals-img-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 28px;
+  max-width: 1140px;
+  margin: 0;
+  padding: 0p;
+  border: 1px solid maroon;
+}
+
+.small-image-1,
+.small-image-2 {
+  border-radius: 15px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.small-image-1 {
+  background-image: url("../assets/deal-bloom.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.small-image-2 {
+  background-image: url("../assets/deal-ana.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.large-image {
+  grid-row: span 2;
+  background-image: url("../assets/deal-zabo.png");
+  border-radius: 15px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+/* Subscribe Section */
+
+.subscribe {
+  position: relative;
+  width: 1440px;
+  height: 533px;
+}
+
+.subscribe-img-container {
+  position: absolute;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 51, 79, 0.4);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.subscribe-form {
+  position: absolute;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  translate: (-50%, -50%);
+  z-index: 3;
+}
+
+/* Footer Styles */
+footer {
+  max-width: 1120px;
 }
 
 /* Responsive for mobile devices */
