@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .deal-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: #f5f8ff;
+            border-radius: 12px;
+        }
+
+        .deal-column {
+            display: grid;
+            gap: 20px;
+        }
+
+        .deal-card {
+            position: relative;
+            border-radius: 12px;
+            color: #fff;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .deal-card.zabo {
+            height: 100%;
+            min-height: 320px;
+        }
+
+        .deal-content {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .deal-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .deal-content a {
+            font-size: 1.25rem;
+            color: #fff;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        /* Background images */
+        .bloom {
+            background-image: url('assets/deal-bloom.png');
+        }
+
+        .ana {
+            background-image: url('assets/deal-ana.png');
+        }
+
+        .zabo {
+            background-image: url('assets/deal-zabo.png');
+        }
+
+        /* 🔻 Responsive Styles */
+        @media (max-width: 768px) {
+            .deal-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .deal-column {
+                display: grid;
+            }
+
+            .deal-card.zabo {
+                min-height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="deal-grid">
+        <div class="deal-column">
+            <div class="deal-card bloom">
+                <div class="deal-content">
+                    <h3>60% Off | Bloom Plant</h3>
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+            <div class="deal-card ana">
+                <div class="deal-content">
+                    <h3>30% Off | Ana Plant</h3>
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="deal-card zabo">
+            <div class="deal-content">
+                <h3>25% Off | Zabo Plant</h3>
+                <a href="#">Shop Now</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
