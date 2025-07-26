@@ -89,7 +89,7 @@ main {
   font-size: 1rem;
   font-weight: 550;
   text-align: center;
-  padding: 20px 0;
+  padding: 15px 0;
   border: none;
   cursor: pointer;
   transition: color 0.5s ease, background-color 0.5s ease, transform 0.5s ease;
@@ -343,7 +343,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid saddlebrown;
 }
 
 .subscribe-form {
@@ -351,6 +350,14 @@ main {
 
 .subscribe-form input[type="email"] {
   width: 77.5%;
+  padding: 15px 20px;
+}
+
+.subscribe-form input[type="email"]::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
 }
 
 .subscribe-heading {
@@ -383,7 +390,7 @@ footer {
 }
 
 /* Responsive for mobile devices */
-@media screen and (width < 576px) {
+@media screen and (width <= 576px) {
   .hide-in-mobile {
     display: none;
   }
@@ -399,7 +406,7 @@ footer {
   }
 
   .brand {
-    width: 20%;
+    width: 18%;
   }
 
   .banner-img {
@@ -499,6 +506,7 @@ footer {
     margin-bottom: 16px;
   }
 
+  .trust-badge-wrapper,
   .trust-badge {
     display: none;
   }
@@ -506,7 +514,11 @@ footer {
   /* Subscribe related styles */
 
   .btn-subscribe {
-    width: 35%;
+    width: 32.1%;
+  }
+
+  .subscribe-form input[type="email"] {
+    width: 67.9%;
   }
 
   .subscribe {
@@ -517,9 +529,14 @@ footer {
     width: calc(100% - 72px);
   }
 
+  .subscribe-form {
+    width: 100%;
+  }
+
   .subscribe-heading {
     font-size: 1.25rem;
     margin-bottom: 23px;
+    padding: 0 0px;
   }
 }
 
