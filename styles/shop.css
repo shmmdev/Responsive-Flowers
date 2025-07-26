@@ -283,7 +283,7 @@ main {
   font-size: 3.125rem;
   font-weight: 700;
   color: black;
-  margin: 0 0;
+  margin: 0 0 16px;
 }
 
 .latest-deals-description {
@@ -294,14 +294,9 @@ main {
 }
 
 /* Deals section image grid styles */
-.deals-img-container {
-  display: grid;
-
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(2, 1fr);
+.deals-container {
+  display: flex;
   gap: 28px;
-  width: 1140px;
-  height: 500px;
   margin: 0;
   padding: 0p;
 }
@@ -590,6 +585,23 @@ footer {
 
   #no-gap {
     margin-bottom: 0px;
+  }
+
+  /* Latest Deals Section Style */
+  .latest-deals {
+  }
+
+  .latest-deals-text {
+    max-width: 888px;
+    margin: 133px 28.5px 0;
+  }
+
+  .latest-deals-heading {
+    font-size: 1.5rem;
+  }
+
+  .latest-deals-description {
+    font-size: 0.875rem;
   }
 }
 
