@@ -408,9 +408,6 @@ main {
   align-items: center;
 }
 
-.subscribe-form {
-}
-
 .subscribe-form input[type="email"] {
   width: 77.5%;
   padding: 15px 20px;
