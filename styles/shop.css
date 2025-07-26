@@ -83,7 +83,21 @@ main {
   transition: color 0.5s ease, background-color 0.5s ease, transform 0.5s ease;
 }
 
-.btn-primary:hover {
+.btn-subscribe {
+  background-color: var(--text-primary);
+  color: white;
+  font-size: 1rem;
+  font-weight: 550;
+  text-align: center;
+  padding: 20px 0;
+  border: none;
+  cursor: pointer;
+  transition: color 0.5s ease, background-color 0.5s ease, transform 0.5s ease;
+  width: 20%;
+}
+
+.btn-primary:hover,
+.btn-subscribe:hover {
   background-color: #1a7e6c;
   color: black;
   transform: scale(1.01);
@@ -236,6 +250,10 @@ main {
   color: var(--text-secondary);
 }
 
+.plant-lover-description li {
+  margin-bottom: 20px;
+}
+
 .trust-badge {
   position: absolute;
   width: 286px;
@@ -295,41 +313,33 @@ main {
 /* Subscribe Section */
 
 .subscribe {
-  position: relative;
-  width: 1440px;
+  width: 100%;
   height: 533px;
   display: inline-block;
   margin-top: 120px;
+  background-image: linear-gradient(rgba(7, 51, 79, 0.4), rgba(7, 51, 79, 0.4)),
+    url(../assets/news-letter-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box;
+
+  /* display: grid;
+  place-items: center; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.subscribe-img-container {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: auto;
-  z-index: 1;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(7, 51, 79, 0.4);
-  pointer-events: none;
-  z-index: 2;
+.subscribe-container {
+  max-width: 830px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .subscribe-form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  z-index: 3;
 }
 
 .subscribe-heading {
@@ -339,6 +349,7 @@ main {
   color: white;
   margin: 0 0;
 }
+
 /* Footer Styles */
 footer {
   max-width: 1120px;
@@ -401,7 +412,7 @@ footer {
   }
 
   .banner-description {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
   }
 
   main {
@@ -422,7 +433,7 @@ footer {
   }
 
   .shop-description {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     margin: 0;
     padding: 0 16px;
   }
@@ -446,5 +457,56 @@ footer {
 
   .btn-primary {
     padding: 15.5px 0;
+  }
+
+  /* Plants Lover Style */
+  .plants-lover {
+    flex-direction: column;
+    margin: 0 16px;
+    padding-top: 41.5px;
+    gap: 18px;
+  }
+
+  .plant-lover-img {
+    width: 100%;
+  }
+
+  .plant-lover-text-container {
+    margin: auto 0;
+  }
+
+  .plant-lover-heading {
+    font-size: 1.5rem;
+  }
+
+  .plant-lover-description {
+    font-size: 0.875rem;
+  }
+
+  .plant-lover-description li {
+    margin-bottom: 16px;
+  }
+
+  .trust-badge {
+    display: none;
+  }
+
+  /* Subscribe related styles */
+
+  .btn-subscribe {
+    width: 35%;
+  }
+
+  .subscribe {
+    max-height: 300px;
+  }
+
+  .subscribe-container {
+    width: calc(100% - 72px);
+  }
+
+  .subscribe-heading {
+    font-size: 1.25rem;
+    margin-bottom: 23px;
   }
 }
